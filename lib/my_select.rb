@@ -4,7 +4,7 @@ def my_select(collection)
  evens = []
  while i < collection.length
    block_given?
-   evens << yield(collection[i]).even
+   evens << yield(collection[i]) % 2 =0
    i += 1
 
  end
